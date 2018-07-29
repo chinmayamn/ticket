@@ -1,0 +1,65 @@
+﻿@model MyTicket.Models.Users
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    
+    <div class="container-fluid body-content">
+        <div class="panel panel-primary" style="width:40%;margin:0 auto;">
+            <div class="panel-heading">Login</div>
+            <div class="panel-body">
+                <div align="center">
+                    @using (Html.BeginForm())
+                    {
+                    <table cellspacing="8" cellpadding="6">
+                        <tr>
+                            <td><b> Username:</b></td>
+                            <td>
+                                @Html.TextBoxFor(u => u.Username)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Password:</b></td>
+                            <td>
+                              @Html.PasswordFor(u=>u.Password)
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>
+                               <input type="submit" value="Login" />
+                                <br/>
+                                @Html.ValidationSummary()
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <a href="forgotpassword.aspx"> Forgot Password ?</a>
+                            </td>
+                        </tr>
+                    </table>
+                    }
+                </div>
+                </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @*@RenderSection("scripts", required: false)*@
+</body>
+</html>
+

@@ -1,0 +1,54 @@
+﻿<div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav side-nav">
+        <li><a href="myprofile.aspx">My Profile</a></li>
+        <li><a href="change-password.aspx">Change Password</a></li>
+        <li><a href="view-department.aspx">View Department</a></li>
+        <li><a href="view-employee.aspx">View Employee</a></li>
+        <li><a href="view-admin.aspx">View Admin</a></li>
+        <li><a href="view-director.aspx">View Director</a></li>
+        <li><a href="view-hr.aspx">View H.R</a></li>
+        <li><a href="assign-hr.aspx">Assign H.R</a></li>
+
+
+        <li>
+            <a href="javascript:;" data-toggle="collapse" data-target="#eticket">Employee Tickets<i class="fa fa-fw fa-caret-down"></i></a>
+            <ul id="eticket"  class="collapse">
+                <li><a href="open-tickets.aspx">Employee Open Tickets</a></li>
+                <li><a href="closed-tickets.aspx">Employee Closed Tickets</a></li>
+
+                <li><a href="reopen-tickets.aspx">Employee Reopen Tickets</a></li>
+                <li><a href="unassigned-tickets.aspx">Employee Unassigned Tickets</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a  href="javascript:;" data-toggle="collapse" data-target="#hrticket">HR Tickets<i class="fa fa-fw fa-caret-down"></i></a>
+            <ul id="hrticket"  class="collapse">
+                <li><a href="hr-open-tickets.aspx">HR Open Tickets</a></li>
+                <li><a href="hr-closed-tickets.aspx">HR Closed Tickets</a></li>
+
+                
+                @*<li><a href="hr-reopen-tickets.aspx">HR Reopen Tickets</a></li>*@
+            </ul>
+        </li>
+
+        <li>
+            <a  href="javascript:;" data-toggle="collapse" data-target="#aticket">Admin Tickets<i class="fa fa-fw fa-caret-down"></i></a>
+            <ul id="aticket"  class="collapse">
+                <li><a href="admin-open-tickets.aspx">Admin Open Tickets</a></li>
+                <li><a href="admin-closed-tickets.aspx">Admin Closed Tickets</a></li>
+
+                
+                @*<li><a href="admin-reopen-tickets.aspx">Admin Reopen Tickets</a></li>*@
+            </ul>
+        </li>
+
+        <li><a href="escalated-tickets.aspx">Escalated to HR Tickets</a></li>
+        <li><a href="escalate-next.aspx">Escalated to Next Level Tickets</a></li>
+        <li><a href="emergency-tickets.aspx">Emergency Open Tickets</a></li>
+        <li><a href="emergency-reopen-tickets.aspx">Emergency Reopen Tickets</a></li>
+        <li><a href="emergency-unassigned-tickets.aspx">Emergency Unassigned Tickets</a></li>
+        <li><a href="director-tickets.aspx">Escalated to Director Tickets</a></li>
+    </ul>
+</div>
+<!-- /.navbar-collapse -->

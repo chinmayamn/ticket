@@ -1,0 +1,2 @@
+c:\Users\chaitra\source\repos\MyTicket\TDAL\obj\Debug\TDAL.csprojResolveAssemblyReference.cache
+c:\Users\chaitra\source\repos\MyTicket\TDAL\obj\Debug\TDAL.csproj.CoreCompileInputs.cache
