@@ -26,6 +26,8 @@ namespace MyTicket.Controllers
             {
                  string userid = "";
                 string utype = u.ReturnUser(user,ref userid);
+                AuthorizeAttribute a = new AuthorizeAttribute();
+                a.Roles = "Admin";
                 Session["userid"] = userid;
                return Redirect(utype);
              
@@ -35,5 +37,29 @@ namespace MyTicket.Controllers
            
         }
 
+        /*
+        [HandleError()]
+        public ActionResult Geterror()
+        {
+            throw new Exception("test");
+        }
+
+    
+        public ActionResult GetNewerror()
+        {
+            try
+            {
+                throw new Exception("test");
+            }
+            catch(Exception ex)
+            {
+                return View("~/Views/shared/error.cshtml");
+            }
+        }
+*/
+        public ActionResult Error()
+        {
+            return View("error");
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace MyTicket.Areas.Director.Controllers
 {
-    [Authorize(Roles = "Director")]
+  // [Authorize(Roles = "Director")]
     public class DirectorController : Controller
     {
         // GET: Director/Director
