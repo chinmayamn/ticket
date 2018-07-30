@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace MyTicket.Areas.Employee.Controllers
 {
-    [Authorize(Roles = "Employee")]
+  //  [Authorize(Roles = "Employee")]
     public class EmployeeController : Controller
     {
         // GET: Employee/Employee

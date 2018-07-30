@@ -116,3 +116,4 @@ c:\users\chaitra\source\repos\MyTicket\MyTicket\obj\Debug\MyTicket.pdb
 c:\users\chaitra\source\repos\MyTicket\MyTicket\bin\MyTicket.dll.config
 c:\users\chaitra\source\repos\MyTicket\MyTicket\bin\MyTicket.dll
 c:\users\chaitra\source\repos\MyTicket\MyTicket\bin\MyTicket.pdb
+c:\users\chaitra\source\repos\MyTicket\MyTicket\obj\Debug\MyTicket.csprojResolveAssemblyReference.cache

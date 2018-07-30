@@ -17,5 +17,10 @@ namespace MyTicket
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+
+        public void Application_Error(object sender,EventArgs e)
+        {
+            Response.Redirect("/Login/error");
+        }
     }
 }
